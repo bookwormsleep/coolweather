@@ -9,13 +9,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.coolweather.android.WeatherActivity">
+    <!-- ScrollView可以允许我们通过流动的方式查看屏幕以外的内容 -->
     <ScrollView
         android:id="@+id/weather_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none"
         android:overScrollMode="never">
-
+        <!-- 由于ScrollView只允许存在一个直接子布局，因此套了直的LinearLayout，再逐个引入 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
